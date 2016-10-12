@@ -1,0 +1,14 @@
+{
+ "dimensions": [
+  "800x300",
+  "728x90"
+ ],
+ "campaign-information": {
+  "name": "Test",
+  "client": "example",
+  "job-id": 123,
+  "locale": "en-gb",
+  "jira-link": "",
+  "version": 0
+ }
+}

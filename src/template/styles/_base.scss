@@ -1,0 +1,69 @@
+#banner {
+  position: relative;
+  @extend .full-dimension;
+
+  &-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $banner-width - 2;
+    height: $banner-height - 2;
+    border: 1px solid #000;
+  }
+}
+
+#fullBanner {
+  position: relative;
+  @extend .expand-dimension;
+
+  &-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $banner-width-expanded - 2;
+    height: $banner-height-expanded - 2;
+    border: 1px solid #000;
+  }
+}
+
+#covering-div {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d1d3d3;
+}
+
+/* helper classes */
+.top-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.full-dimension {
+  width: $banner-width;
+  height: $banner-height;
+}
+
+.expand-dimension {
+  width: $banner-width-expanded;
+  height: $banner-height-expanded;
+}
+.hide {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+/* required by doubleclick */
+#bg-exit {
+  background-color: rgba(255,255,255,0);
+  cursor: pointer;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
